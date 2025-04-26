@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="435.0" prefWidth="628.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.seminarsystem.FacultyDashboardController">
+   <children>
+      <TextArea fx:id="name" editable="false" layoutX="28.0" layoutY="48.0" prefHeight="87.0" prefWidth="200.0" promptText="Faculty info will appear here…" wrapText="true" />
+
+      <!-- Notifications VBox -->
+      <VBox layoutX="315.0" layoutY="151.0" prefHeight="230.0" prefWidth="270.0">
+         <children>
+            <Label prefHeight="62.0" prefWidth="270.0" text="Notifications" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ListView fx:id="noti" prefHeight="200.0" prefWidth="504.0" VBox.vgrow="ALWAYS">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </ListView>
+         </children>
+      </VBox>
+
+      <Label layoutX="195.0" layoutY="13.0" prefHeight="30.0" prefWidth="270.0" styleClass="dashboard-heading" text="FACULTY DASHBOARD">
+         <font>
+            <Font name="Arial Bold Italic" size="24.0" />
+         </font>
+      </Label>
+
+      <!-- Student Submission VBox -->
+      <VBox layoutX="14.0" layoutY="157.0" prefHeight="230.0" prefWidth="283.0">
+         <children>
+            <Label text="Student Submission">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ListView fx:id="studentSubmission" prefHeight="216.0" prefWidth="262.0" VBox.vgrow="ALWAYS">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </ListView>
+         </children>
+      </VBox>
+
+      <Button layoutX="548.0" layoutY="14.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="60.0" text="⏼" />
+
+      <!-- Total Students VBox -->
+      <VBox layoutX="297.0" layoutY="48.0" prefHeight="70.0" prefWidth="283.0">
+         <children>
+            <Label prefHeight="26.0" prefWidth="210.0" text="Total Number of students">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ListView fx:id="numOfStudents" prefHeight="37.0" prefWidth="179.0" VBox.vgrow="ALWAYS">
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </ListView>
+         </children>
+      </VBox>
+
+      <VBox layoutX="14.0" layoutY="211.0" prefHeight="70.0" prefWidth="283.0" />
+
+      <MenuButton layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="☰">
+         <items>
+            <MenuItem fx:id="allocatedStudentsItem" onAction="#handleAllocatedStudents" text="Allocated Students" />
+            <MenuItem fx:id="viewSubmissionsItem" onAction="#handleViewSubmissions" text="View Submissions" />
+            <MenuItem fx:id="sendNotificationItem" onAction="#handleSendNotification" text="Send Notification" />
+            <MenuItem fx:id="marksItem" onAction="#handleMarks" text="Marks" />
+         </items>
+      </MenuButton>
+   </children>
+</AnchorPane>

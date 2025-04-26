@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="815.0" prefWidth="1231.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.seminarsystem.TopicSelectionController" stylesheets="@styles.css">
+   <children>
+      <!-- Topic 1 -->
+      <TextField fx:id="topic1Field" layoutX="194.0" layoutY="26.0" prefHeight="26.0" prefWidth="392.0" />
+      <Label layoutX="36.0" layoutY="25.0" prefHeight="18.0" prefWidth="133.0" text="Topic1">
+         <font><Font size="18.0" /></font>
+      </Label>
+
+      <!-- Domain 1 -->
+      <TextField fx:id="domain1Field" layoutX="194.0" layoutY="96.0" prefHeight="26.0" prefWidth="392.0" />
+      <Label layoutX="36.0" layoutY="95.0" prefHeight="18.0" prefWidth="133.0" text="Domain1">
+         <font><Font size="18.0" /></font>
+      </Label>
+
+      <!-- Problem Statement 1 -->
+      <TextField fx:id="problem1Field" layoutX="194.0" layoutY="173.0" prefHeight="26.0" prefWidth="392.0" />
+      <Label layoutX="35.0" layoutY="168.0" prefHeight="27.0" prefWidth="134.0" text="Problem ">
+         <font><Font size="18.0" /></font>
+      </Label>
+      <Label layoutX="35.0" layoutY="186.0" prefHeight="27.0" prefWidth="134.0" text="Statement1">
+         <font><Font size="18.0" /></font>
+      </Label>
+
+      <!-- Abstract 1 -->
+      <TextField fx:id="abstract1Field" layoutX="194.0" layoutY="248.0" prefHeight="142.0" prefWidth="392.0" />
+      <Label layoutX="36.0" layoutY="248.0" prefHeight="18.0" prefWidth="133.0" text="Abstract1">
+         <font><Font size="18.0" /></font>
+      </Label>
+
+      <!-- Topic 3 -->
+      <TextField fx:id="topic3Field" layoutX="790.0" layoutY="26.0" prefHeight="26.0" prefWidth="392.0" />
+      <Label layoutX="632.0" layoutY="25.0" prefHeight="18.0" prefWidth="133.0" text="Topic3">
+         <font><Font size="18.0" /></font>
+      </Label>
+
+      <!-- Domain 3 -->
+      <TextField fx:id="domain3Field" layoutX="790.0" layoutY="96.0" prefHeight="26.0" prefWidth="392.0" />
+      <Label layoutX="632.0" layoutY="95.0" prefHeight="18.0" prefWidth="133.0" text="Domain3">
+         <font><Font size="18.0" /></font>
+      </Label>
+
+      <!-- Problem Statement 3 -->
+      <TextField fx:id="problem3Field" layoutX="790.0" layoutY="173.0" prefHeight="26.0" prefWidth="392.0" />
+      <Label layoutX="631.0" layoutY="168.0" prefHeight="27.0" prefWidth="134.0" text="Problem ">
+         <font><Font size="18.0" /></font>
+      </Label>
+      <Label layoutX="631.0" layoutY="186.0" prefHeight="27.0" prefWidth="134.0" text="Statement3">
+         <font><Font size="18.0" /></font>
+      </Label>
+
+      <!-- Abstract 3 -->
+      <TextField fx:id="abstract3Field" layoutX="790.0" layoutY="248.0" prefHeight="142.0" prefWidth="392.0" />
+      <Label layoutX="632.0" layoutY="248.0" prefHeight="18.0" prefWidth="133.0" text="Abstract3">
+         <font><Font size="18.0" /></font>
+      </Label>
+
+      <!-- Topic 2 -->
+      <TextField fx:id="topic2Field" layoutX="194.0" layoutY="419.0" prefHeight="26.0" prefWidth="392.0" />
+      <Label layoutX="36.0" layoutY="418.0" prefHeight="18.0" prefWidth="133.0" text="Topic2">
+         <font><Font size="18.0" /></font>
+      </Label>
+
+      <!-- Domain 2 -->
+      <TextField fx:id="domain2Field" layoutX="194.0" layoutY="489.0" prefHeight="26.0" prefWidth="392.0" />
+      <Label layoutX="36.0" layoutY="488.0" prefHeight="18.0" prefWidth="133.0" text="Domain2">
+         <font><Font size="18.0" /></font>
+      </Label>
+
+      <!-- Problem Statement 2 -->
+      <TextField fx:id="problem2Field" layoutX="194.0" layoutY="566.0" prefHeight="26.0" prefWidth="392.0" />
+      <Label layoutX="35.0" layoutY="561.0" prefHeight="27.0" prefWidth="134.0" text="Problem ">
+         <font><Font size="18.0" /></font>
+      </Label>
+      <Label layoutX="35.0" layoutY="579.0" prefHeight="27.0" prefWidth="134.0" text="Statement2">
+         <font><Font size="18.0" /></font>
+      </Label>
+
+      <!-- Abstract 2 -->
+      <TextField fx:id="abstract2Field" layoutX="194.0" layoutY="641.0" prefHeight="142.0" prefWidth="392.0" />
+      <Label layoutX="36.0" layoutY="641.0" prefHeight="18.0" prefWidth="133.0" text="Abstract2">
+         <font><Font size="18.0" /></font>
+      </Label>
+
+      <!-- Submit Button -->
+      <Button fx:id="submitButton" layoutX="790.0" layoutY="419.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="392.0" text="Submit" onAction="#handleSubmitTopics">
+         <font><Font name="System Bold" size="17.0" /></font>
+      </Button>
+
+      <!-- Back Button -->
+      <Button layoutX="791.0" layoutY="501.0" mnemonicParsing="false" onAction="#handleBackToDashboard" prefHeight="38.0" prefWidth="392.0" text="Back">
+         <font><Font name="System Bold" size="17.0" /></font>
+      </Button>
+   </children>
+</AnchorPane>

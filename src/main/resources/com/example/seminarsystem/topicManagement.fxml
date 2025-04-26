@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.seminarsystem.TopicManagementController" stylesheets="@styles.css">
+
+    <children>
+        <Button fx:id="backButton" layoutX="30.0" layoutY="360.0" mnemonicParsing="false"
+                onAction="#handleBack" text="Back"/>
+        <TableView fx:id="topicTable" layoutX="30.0" layoutY="30.0" prefHeight="320.0" prefWidth="740.0">
+            <columns>
+                <TableColumn fx:id="studentIdCol" text="Student ID"/>
+                <TableColumn fx:id="studentNameCol" text="Student Name"/>
+                <TableColumn fx:id="topicCol" text="Topic"/>
+                <TableColumn fx:id="domainCol" text="Domain"/>
+                <TableColumn fx:id="problemCol" text="Problem Statement"/>
+                <TableColumn fx:id="abstractCol" text="Abstract"/>
+                <TableColumn fx:id="approvalCol" text="Approval"/>
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
